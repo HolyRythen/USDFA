@@ -5,7 +5,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
         return;
     }
 
-    const apiKey = '64eBTRZTssIc7gAqzHkNb2Qb6kjoq7ZoOjF0fzUY';
+    const apiKey = 'API_KEY'; // Your API KEY (You can get it from there: https://www.ers.usda.gov/developer/data-apis/)
     const apiUrl = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${foodItem}&api_key=${apiKey}`;
 
     fetch(apiUrl)
